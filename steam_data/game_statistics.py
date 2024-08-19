@@ -22,3 +22,16 @@ class GameStatistics:
         max_jogos = max(anos.values())
         anos_max = [ano for ano, count in anos.items() if count == max_jogos]
         return anos_max
+
+    def jogo_com_maior_nota_por_categoria(self):
+        categorias = defaultdict(lambda: {'jogo': '', 'nota': 0})
+        
+        for game in self.games:
+            categorias_jogo = game['Categories'].split(',')
+            user_score = float(game['User score']) if game['User score'] else 0
+            
+            for categoria in categorias_jogo:
+                if user_score > categorias[categoria]['nota']:
+                    categorias[categoria] = {'jogo': game['Name'], 'nota': user_score}
+        
+        return categorias

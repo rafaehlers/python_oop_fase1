@@ -14,5 +14,8 @@ def main():
     print("Ano com mais lançamentos:")
     print(stats.ano_com_mais_jogos())
 
+    print("Jogo com maior nota por categoria:")
+    print(stats.jogo_com_maior_nota_por_categoria())
+
 if __name__ == "__main__":
     main()
