@@ -1,3 +1,9 @@
+# Curso: Curso Superior de Tecnologia em Banco de Dados: Ênfase em Data Analytics
+# Disciplina: Programação para Dados
+# Projeto: Fase 1
+# Aluno: Rafael de Menezes Ehlers
+# Data: Agosto de 2024
+
 import unittest
 from steam_data.data_loader import DataLoader
 from steam_data.game_statistics import GameStatistics
