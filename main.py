@@ -3,6 +3,7 @@
 # Projeto: Fase 1
 # Aluno: Rafael de Menezes Ehlers
 # Data: Agosto de 2024
+# GitHub: https://github.com/rafaehlers/python_oop_fase1
 
 from steam_data.data_loader import DataLoader
 from steam_data.game_statistics import GameStatistics
