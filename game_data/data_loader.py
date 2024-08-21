@@ -6,7 +6,7 @@
 # GitHub: https://github.com/rafaehlers/python_oop_fase1
 
 import csv
-from steam_data.exceptions import DataLoadException
+from game_data.exceptions import DataLoadException
 
 class DataLoader:
     def __init__(self, file_path):
