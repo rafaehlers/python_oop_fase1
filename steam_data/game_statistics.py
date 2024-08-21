@@ -3,6 +3,7 @@
 # Projeto: Fase 1
 # Aluno: Rafael de Menezes Ehlers
 # Data: Agosto de 2024
+# GitHub: https://github.com/rafaehlers/python_oop_fase1
 
 from collections import defaultdict
 
