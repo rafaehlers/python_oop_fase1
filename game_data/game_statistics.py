@@ -26,11 +26,11 @@ class GameStatistics:
         max_jogos = max(anos.values())
         anos_max = [ano for ano, count in anos.items() if count == max_jogos]
         
-        # Se houver apenas um ano, retorná-lo diretamente como string
+        # Se houver apenas um ano, retorna diretamente como string
         if len(anos_max) == 1:
             return anos_max[0]
     
-        # Se houver mais de um ano (empate), retornar como string concatenada
+        # Se houver mais de um ano (empate), retorna como string concatenada
         return ', '.join(anos_max)
 
     def jogo_com_maior_nota_por_categoria(self):
@@ -43,7 +43,7 @@ class GameStatistics:
                 if categoria and game['Name'] and game_score > categorias[categoria]['nota']:
                     categorias[categoria] = {'jogo': game['Name'], 'nota': game_score}
 
-        # Formatar a saída para uma string legível, ignorando categorias ou jogos vazios
+        # Formata a saída para uma string legível, ignorando categorias ou jogos vazios
         output = []
         for categoria, info in categorias.items():
             if info['jogo']:  # Verifica se o nome do jogo não está vazio

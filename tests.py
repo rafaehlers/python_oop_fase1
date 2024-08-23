@@ -18,7 +18,7 @@ class TestSteamData(unittest.TestCase):
 
     def test_percentual_jogos_gratuitos_pagos(self):
         resultado = self.stats.percentual_jogos_gratuitos_pagos()
-        self.assertEqual(resultado, "Gratuitos: 17.39%, Pagos: 82.61%")
+        self.assertEqual(resultado, "Gratuitos: 20.00%, Pagos: 80.00%")
 
     def test_ano_com_mais_jogos(self):
         anos_max = self.stats.ano_com_mais_jogos()

@@ -21,7 +21,7 @@ def main():
     print("#"*50)
     print(f"Ano com mais lançamentos: {stats.ano_com_mais_jogos()}")
     print("#"*50)
-    print("Jogo com maior nota por categoria:")
+    print("Jogo com maior nota, por categoria:")
     print("CATEGORIA                      | NOME DO JOGO                             | NOTA")
     print(stats.jogo_com_maior_nota_por_categoria())
 
