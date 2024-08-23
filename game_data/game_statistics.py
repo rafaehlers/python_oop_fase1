@@ -37,7 +37,7 @@ class GameStatistics:
         categorias = defaultdict(lambda: {'jogo': '', 'nota': 0})
         
         for game in self.games:
-            game_score = float(game.get('User score', 0))
+            game_score = float(game.get('Positive', 0))
             for categoria in game['Categories'].split(','):
                 categoria = categoria.strip()
                 if categoria and game['Name'] and game_score > categorias[categoria]['nota']:
